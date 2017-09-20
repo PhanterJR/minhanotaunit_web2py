@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="application-name" content="{{=request.application}}">
+    <title>{{=request.application}}</title>
+    <link rel="stylesheet" href="{{=URL('static','www/css/font-awesome.min.css')}}"/>
+    <link rel="stylesheet" href="{{=URL('static','www/css/materialize.min.css')}}"/>
+    {{include 'www/www_web2py_ajax.html'}}
+    <script src="{{=URL('static','www/js/jquery.js')}}" type="text/javascript"></script>
+    <script src="{{=URL('static','www/js/phanterresponsivo.js')}}" type="text/javascript"></script>
+    <script src="{{=URL('static','www/js/materialize.min.js')}}" type="text/javascript"></script>
+    
+    {{block head}}
+    {{end head}}
+  </head>
+  <body>
+  <header>
+    {{block header}}
+    {{end header}}  
+  </header>
+  <main>
+  {{block main}}
+{{end main}}
+    {{include}}
+  </main>
+  <footer class="page-footer">
+    {{block footer}}
+    {{end footer}}
+  </footer>
+  <script type="text/javascript" src="cordova.js"></script>
+  {{block javascript}}
+  {{end javascript}}
+  </body>
+
+</html>

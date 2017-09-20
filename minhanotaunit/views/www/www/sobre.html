@@ -1,0 +1,262 @@
+{{extend 'www/www_layout.html'}}
+{{block head}}
+  <style type="text/css">
+    body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+    /*inicio Logo*/
+      .caixa_logo_principal{
+        height: 150px;
+        width: 282px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #logo_conex {
+        position: relative;
+      }
+      #letra01 {
+        width: 40px;
+        height: 40px;
+        margin-top: 13px;
+        margin-left: 0px;
+        background: transparent url("{{=URL('static','www', args='images/sprit_conex.png')}}") no-repeat scroll 0px -13px;
+        padding: 0px;
+        -webkit-animation: letrac 30s ease-in infinite;
+                animation: letrac 30s ease-in infinite;
+      }
+      #letra02 {
+        width: 40px;
+        height: 40px;
+        margin-top: 27px;
+        margin-left: 40px;
+        background: transparent url("{{=URL('static','www', args='images/sprit_conex.png')}}") no-repeat scroll -40px -27px;
+        padding: 0px;
+        -webkit-animation: letrao1 30s ease-in infinite;
+                animation: letrao1 30s ease-in infinite;
+      }
+      #letra03 {
+        width: 40px;
+        height: 40px;
+        margin-top: 14px;
+        margin-left: 80px;
+        background: transparent url("{{=URL('static','www', args='images/sprit_conex.png')}}") no-repeat scroll -80px -14px;
+        padding: 0px;
+        -webkit-animation: letran 30s ease-in infinite;
+                animation: letran 30s ease-in infinite;
+      }
+      #letra04 {
+        width: 40px;
+        height: 40px;
+        margin-top: 0px;
+        margin-left: 120px;
+        background: transparent url("{{=URL('static','www', args='images/sprit_conex.png')}}") no-repeat scroll -120px 0px;
+        padding: 0px;
+        -webkit-animation: letrae 30s ease-in infinite;
+                animation: letrae 30s ease-in infinite;
+      }
+      #letra05 {
+        width: 40px;
+        height: 40px;
+        margin-top: 14px;
+        margin-left: 163px;
+        background: transparent url("{{=URL('static','www', args='images/sprit_conex.png')}}") no-repeat scroll -163px -14px;
+        padding: 0px;
+        -webkit-animation: letrax 30s ease-in infinite;
+                animation: letrax 30s ease-in infinite;
+      }
+      #letra06 {
+        width: 40px;
+        height: 46px;
+        margin-top: 16px;
+        margin-left: 201px;
+        background: transparent url("{{=URL('static','www', args='images/sprit_conex.png')}}") no-repeat scroll -201px -16px;
+        padding: 0px;
+        -webkit-animation: letraa 30s ease-in infinite;
+                animation: letraa 30s ease-in infinite;
+      }
+      #letra07 {
+        width: 40px;
+        height: 40px;
+        margin-top: 13px;
+        margin-left: 241px;
+        background: transparent url("{{=URL('static','www', args='images/sprit_conex.png')}}") no-repeat scroll -241px -13px;
+        padding: 0px;
+        -webkit-animation: letrao2 30s ease-in infinite;
+                animation: letrao2 30s ease-in infinite;
+      }
+      #didata {
+        top: -5px;
+        width: 154px;
+        height: 67px;
+        margin-top: 63px;
+        margin-left: 125px;
+        background: transparent url("{{=URL('static','www', args='images/sprit_conex.png')}}") no-repeat scroll -125px -63px;
+        padding: 0px;
+        -webkit-animation: didataani 30s ease-in infinite;
+                animation: didataani 30s ease-in infinite;
+      }
+      .letras_conex {
+        position: absolute;
+      }
+      @-webkit-keyframes letrac {
+        0% {top:0; left: 0;}
+        4% {top:0; left: 0;}
+        5% {top:5px; left: 4px;}
+        20% {top:5px; left:4px;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @keyframes letrac {
+        0% {top:0; left: 0;}
+        4% {top:0; left: 0;}
+        5% {top:5px; left: 4px;}
+        20% {top:5px; left:4px;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @-webkit-keyframes letrao1 {
+        0% {top:0; left: 0;}
+        7% {top:0; left: 0;}
+        8% {top:-7px; left: 3px;}
+        20% {top:-7px; left:3px;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @keyframes letrao1 {
+        0% {top:0; left: 0;}
+        7% {top:0; left: 0;}
+        8% {top:-7px; left: 3px;}
+        20% {top:-7px; left:3px;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @-webkit-keyframes letran {
+        0% {top:0; left: 0;}
+        3% {top:0; left: 0;}
+        4% {top:5px; left: 2px;}
+        20% {top:5px; left:2px;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @keyframes letran {
+        0% {top:0; left: 0;}
+        3% {top:0; left: 0;}
+        4% {top:5px; left: 2px;}
+        20% {top:5px; left:2px;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @-webkit-keyframes letrae {
+        0% {top:0; left: 0;}
+        6% {top:0; left: 0;}
+        7% {top:20px; left: 0;}
+        20% {top:20px; left:0;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @keyframes letrae {
+        0% {top:0; left: 0;}
+        6% {top:0; left: 0;}
+        7% {top:20px; left: 0;}
+        20% {top:20px; left:0;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @-webkit-keyframes letrax {
+        0% {top:0; left: 0;}
+        2% {top:0; left: 0;}
+        3% {top:5px; left: -2px;}
+        20% {top:5px; left:-2px;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @keyframes letrax {
+        0% {top:0; left: 0;}
+        2% {top:0; left: 0;}
+        3% {top:5px; left: -2px;}
+        20% {top:5px; left:-2px;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @-webkit-keyframes letraa {
+        0% {top:0; left: 0;}
+        5% {top:0; left: 0;}
+        6% {top:-9px; left: -3;}
+        20% {top:-9px; left:-3;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @keyframes letraa {
+        0% {top:0; left: 0;}
+        5% {top:0; left: 0;}
+        6% {top:-9px; left: -3;}
+        20% {top:-9px; left:-3;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @-webkit-keyframes letrao2 {
+        0% {top:0; left: 0;}
+        8% {top:0; left: 0;}
+        9% {top:5px; left: -4px;}  
+        20% {top:5px; left:-4px;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @keyframes letrao2 {
+        0% {top:0; left: 0;}
+        8% {top:0; left: 0;}
+        9% {top:5px; left: -4px;}  
+        20% {top:5px; left:-4px;}
+        21% {top:0; left:0;}
+        100%{top:0; left: 0;}
+        }
+      @-webkit-keyframes didataani {
+        0% {top: -5px;}
+        7%{top:-5px;}
+        8%{top:-10px;}
+        20%{top:-10px;}
+        21%{top:-5px;}
+        100%{top:-5px;}
+        }
+      @keyframes didataani {
+        0% {top: -5px;}
+        7%{top:-5px;}
+        8%{top:-10px;}
+        20%{top:-10px;}
+        21%{top:-5px;}
+        100%{top:-5px;}
+        }
+    /*fim Logo*/
+    .copyfooter{
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background-color: #344581;
+    }
+    .page-footer {
+      background-color: #344581;
+    }
+    .button-collapse > i.fa {
+      font-size: 2rem;
+    }
+    .fixed-action-btn {
+      bottom: 56px;
+    }
+  </style>
+{{end head}}
+{{block header}}
+  {{=header}}
+{{end header}}
+{{=main}}
+{{block footer}}
+  {{=footer}}
+{{end footer}}
+
+
